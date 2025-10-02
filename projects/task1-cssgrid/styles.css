@@ -1,20 +1,24 @@
 /* Typography imported from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
 
-.hero {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: url(img/bg.jfif);
-}
-
-body {
-  margin: 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  color: red;
+
+}
+
+.hero {
+  background-image: url(img/bg.jfif);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+body{
+margin: 0px;
+padding: 0px;
 }
 
 ul {
@@ -25,10 +29,13 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 70px;
 }
 
 p, a {
   font-family: 'Source Sans Pro', sans-serif;
+  
 }
 
 
@@ -65,5 +72,55 @@ p, a {
   font-size: 1.25rem;
 }
 
+a{
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.hero .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.hero p {
+  font-weight: lighter;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+
+ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+ul p {
+  color: gray;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+
+li{
+  padding-bottom: 20px; 
+  margin-bottom: 30px;
+}
+
+ul a {
+  margin-left: 10px;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  padding: 25px;
+}
 
 
